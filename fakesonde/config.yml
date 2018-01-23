@@ -1,0 +1,76 @@
+dumpFolder: /var/log
+fakeData:
+  - measures:
+      type: "sensors"
+      fileName: "sensors"
+      frequency: 1000
+      data:
+        - temperature:
+            desc: "Température"
+            unit: "C"
+            range: [0,40]
+            precision: 2
+            variation: 0.02
+        - pressure:
+            desc: "Pression"
+            unit: "hP"
+            range: [880,1110]
+            precision: 2
+            variation: 0.08
+        - humidity:
+            desc: "Humidité"
+            unit: "%"
+            range: [45,99]
+            precision: 1
+            variation: 0.2
+        - luminosity:
+            desc: "Luminosité"
+            unit: "Lux"
+            function: "daylight"
+            range: [1,100000]
+            precision: 0
+            variation: 0.05
+        - wind_heading:
+            desc: "Direction du vent"
+            unit: "°"
+            range: [0,360]
+            precision: 12.5
+            variation: 25
+        - wind_speed_avg:
+            desc: "Force moyenne du vent"
+            unit: "Kts"
+            range: [0,80]
+            precision: 1
+            variation: 5
+        - wind_speed_max:
+            desc: "Force maxi du vent"
+            unit: "Kts"
+            range: [2,120]
+            precision: 1
+            variation: 15
+        - wind_speed_min:
+            desc: "Force moyenne du vent"
+            unit: "Kts"
+            range: [0,50]
+            precision: 1
+            variation: 3
+
+  - rain:
+      type: "rain"
+      fileName: "rainCounter.log"
+      mode: "a"
+      rainProbability: 0.2
+      frequency: 2000
+  - gps:
+      type: "nmea"
+      fileName: "gpsNmea"
+      frequency: 2000
+      latitude: 43.962500
+      longitude: 5.774005
+      altitude: 653.82
+      variation:
+        plani: 0.0005
+        alti: 10
+      data:
+        - "GGA"
+        - "RMC"

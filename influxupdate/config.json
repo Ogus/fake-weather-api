@@ -1,0 +1,7 @@
+{
+  "dataFolder": "/var/log/",
+  "fileSensors": "sensors",
+  "fileNmea": "gpsNmea",
+  "fileRain": "rainCounter.log",
+  "frequency": 500
+}

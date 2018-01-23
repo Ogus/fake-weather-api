@@ -1,0 +1,33 @@
+{
+  "name": "fakeSonde",
+  "version": "0.0.1",
+  "description": "Node.js fake data for Weather simulation",
+  "author": "cedricici <cedric.esnault@cedricici.eu>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "debug": "node-debug server.js",
+    "watch": "nodemon",
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "js-yaml": "^3.10.0",
+    "xxhashjs": "^0.2.2"
+  },
+  "devDependencies": {
+    "mocha": "^4.1.0",
+    "chai": "^4.1.2",
+    "chai-fs": "^2.0.0",
+    "chai-json-schema": "",
+    "node-inspector": "",
+    "service-systemd": "",
+    "nodemon": ""
+  },
+  "nodemonConfig": {
+    "events": {
+      "restart": "npm run test && npm start",
+      "start": "npm run test && npm start"
+    }
+  }
+}

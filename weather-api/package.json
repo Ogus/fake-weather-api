@@ -1,0 +1,16 @@
+{
+  "name": "weather-api",
+  "version": "1.0.0",
+  "description": "Mock-up weather API, to use in combination with fakesonde",
+  "author": "Ogus",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "influx": "^5.0.7",
+    "socket.io": "^2.0.4"
+  }
+}

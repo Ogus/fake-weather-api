@@ -1,0 +1,17 @@
+{
+  "name": "influxUpdate",
+  "version": "0.0.1",
+  "description": "InfluxDB updater for fakeSonde",
+  "author": "Ogus",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "chokidar": "^2.0.0",
+    "fs": "^0.0.1-security",
+    "http": "0.0.0",
+    "influx": "^5.0.7",
+    "tcp-ping": "^0.1.1"
+  }
+}
